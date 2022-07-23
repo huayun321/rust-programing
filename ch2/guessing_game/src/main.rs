@@ -17,8 +17,11 @@ fn main() {
         io::stdin().read_line(&mut guess)
             .expect("Failed to read line");
 
-        let guess: u32 = guess.trim().parse() //同名变量隐藏旧变量
-            .expect("Please type a number!");
+        //同名变量隐藏旧变量
+        let guess: u32 = match guess.trim().parse() {
+            Ok(num) => num,
+            Err(_) => continue,
+        };
 
         println!("You guessed: {}", guess);
 
