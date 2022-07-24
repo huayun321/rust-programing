@@ -8,5 +8,4 @@ fn main() {
     println!("The value of z is: {}", z);
 
     println!("The value of cat is: {}", cat);
-
 }
