@@ -1,4 +1,5 @@
 fn main() {
+    //tuple test
     let tup = (500, 6.4, 1);
     let (x, y, z) = tup;
     println!("The value of x is: {}", x);
