@@ -1,5 +1,5 @@
 fn main() {
-    //闭包捕获可变引用
+    //闭包捕获不可变引用
     let list1 = vec![1, 2, 3];
     println!("Before defining closure: {:?}", list1);
 
@@ -9,7 +9,7 @@ fn main() {
     only_borrows();
     println!("After calling closure: {:?}", list1);
 
-    //闭包捕获不可变引用
+    //闭包捕获可变引用
     let mut list = vec![1, 2, 3];
     println!("Before defining closure: {:?}", list);
 
